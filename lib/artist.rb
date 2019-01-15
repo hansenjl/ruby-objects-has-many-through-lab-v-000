@@ -12,6 +12,12 @@ class Artist
     
   end
   
+  def genres #through relationship
+    self.songs.map do |song|
+      song.genre 
+    end
+  end
+  
 
 end
 
